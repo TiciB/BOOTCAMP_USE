@@ -19,5 +19,13 @@
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "eslint": "^8.17.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiciB/BOOTCAMP_USE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TiciB/BOOTCAMP_USE/issues"
+  },
+  "homepage": "https://github.com/TiciB/BOOTCAMP_USE#readme"
 }
