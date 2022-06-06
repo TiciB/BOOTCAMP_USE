@@ -2,6 +2,7 @@ import express, {Request, Response} from 'express';
 
 
 const app = express();
+app.use(express.json ());
 const categories: any = [];
 
 app.get('/', (request: Request, response: Response) => {
@@ -15,7 +16,13 @@ app.get('/categories', (request: Request , response: Response) =>{
 
 app.post('/categories', (request: Request , response: Response) =>{
     const data = request.body;
-    categories.push(data);
+    const category = {
+        id:(categories.legth + 1),
+        name: data.name,
+        created_at: new Date (),
+        updated_at: new Date()
+    }
+    categories.push(category);
     return response.json().status(200);
 });
 
